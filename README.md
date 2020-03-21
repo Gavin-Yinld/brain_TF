@@ -1,4 +1,4 @@
-# Epigenetic regulation of neuronal cell specification inferred with single cell “Omics” data
+# |Epigenetic regulation of neuronal cell specification inferred with single cell “Omics” data|
 
 <div align=center><img width="600" height="750" src="https://github.com/Gavin-Yinld/brain_TF/blob/master/Figures/cover.png" /></div>
 
@@ -8,7 +8,7 @@ Growing single-cell “omics” data provide an opportunity to explore brain epi
 
 # How to use
 
-Briefly, the pipeline contains following steps:
+Briefly, this pipeline contains following steps:
 1.	Recursive motif search on DMRs of neuronal subtypes to identify key TFs associated with cell specification.
 2.	Single-cell RNA-seq analysis to check cell-type specific expression of key TFs.
 3.	Epigenetic transcription regulatory module inference (ETRM).
