@@ -1,4 +1,4 @@
-<p align="center">#Epigenetic regulation of neuronal cell specification inferred with single cell “Omics” data</p>
+#<p align="center">Epigenetic regulation of neuronal cell specification inferred with single cell “Omics” data</p>
 
 <p align="center">HelloWorld</p>
 
