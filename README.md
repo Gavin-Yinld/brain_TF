@@ -13,8 +13,8 @@ Briefly, this pipeline contains following steps:
 2.	Single-cell RNA-seq analysis to check cell-type specific expression of key TFs.
 3.	Epigenetic transcription regulatory module inference (ETRM).
 4.	Co-expression analysis of ETRM.<br>
-    a)	At single-cell level<br>
-    b)	At bulk level  <br>
+    a)	At single-cell level.<br>
+    b)	At bulk level.<br>
 5.	Validation of computational predictions.<br>
     a)	Identify ETRM from ChIP-seq data.<br>
     b)	Methylation level of DMRs of gene knock sample across neuronal subtypes. (optional)<br>
