@@ -20,4 +20,4 @@ Briefly, this pipeline contains following steps:
     b)	Methylation level of DMRs of gene knock sample across neuronal subtypes. (optional)<br>
     c)	Predicted cell-compositions of gene knock sample. (optional)<br>
  
-Example usage were stored in corresponding folder, including demo dataset, code result.
+Example usage were stored in corresponding folder, including demo dataset, code and result.
