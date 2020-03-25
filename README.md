@@ -18,6 +18,6 @@ Briefly, this pipeline contains following steps:
 5.	Validation of computational predictions.<br>
     a)	Identify ETRM from ChIP-seq data.<br>
     b)	Methylation level of DMRs of gene knockout sample across neuronal subtypes. (optional)<br>
-    c)	Predicte cell-compositions of gene knockout sample. (optional)<br>
+    c)	Predict cell-compositions of gene knockout sample. (optional)<br>
  
 Example usage were stored in corresponding folder, including demo dataset, code and result.
