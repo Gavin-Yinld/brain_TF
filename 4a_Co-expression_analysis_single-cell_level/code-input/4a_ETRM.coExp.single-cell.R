@@ -1,7 +1,13 @@
 options(stringsAsFactors=F)
+
+# load the demo dataset
 load("demo_dataset/ETRM.single-cell.Exp.Rdata")
+
+# recored the expressed cells for each gene
 exp.genes <- apply(dataSC,1,function(x){return(which(x>0))})
 names(exp.genes) <- rownames(dataSC)
+
+# Initialize the result matrix 
 len <- nrow(dataSC)*(nrow(dataSC)-1) / 2
 data_summary <- data.frame(geneA=c(rep(" ",len)),geneB=c(rep(" ",len)),expA=c(rep(0,len)),expB=c(rep(0,len)),expAB=c(rep(0,len)),pvalue=c(rep(1,len)))
 count <- c()
@@ -17,7 +23,7 @@ for(gA in rownames(dataSC))
 		expB <- length(exp.genes[[gB]])
 		expAB <- length(intersect(exp.genes[[gA]],exp.genes[[gB]]))
 		x <- matrix(c(expAB,expA-expAB,expB-expAB,length(setdiff(rownames(dataSC),unique(c(exp.genes[[gA]],exp.genes[[gB]]))))),2,2)
-		p <- fisher.test(x)$p.value
+		p <- fisher.test(x)$p.value # determine the significance 
 		RF <- (ncol(dataSC)*expAB)/(expA*expB)
 		data_summary[i,1]=gA
 		data_summary[i,2]=gB
@@ -30,11 +36,13 @@ for(gA in rownames(dataSC))
 
 }
 
-data_summary$propA <- data_summary$expAB / data_summary$expA
+# conditional probability
+data_summary$propA <- data_summary$expAB / data_summary$expA 
 data_summary$propB <- data_summary$expAB / data_summary$expB
 
 data_summary$padj = p.adjust(data_summary$pvalue)
 
+# conditional probability matrix
 plot.data <- matrix(0,length(genes),length(genes))
 colnames(plot.data) <- genes
 rownames(plot.data) <- genes
