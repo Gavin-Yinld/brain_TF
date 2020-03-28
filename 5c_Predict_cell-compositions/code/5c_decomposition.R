@@ -1,6 +1,6 @@
 options(stringsAsFactors=F)
 load("demo-dataset/data.for.decomposition.github.Rdata")
-library(DWLS) #https://bitbucket.org/yuanlab/dwls
+library(DWLS) # more details for this package can be found in https://bitbucket.org/yuanlab/dwls
 predicte.proportion <- NULL
 for(sample in colnames(dataBulk)){
 print(sample)
