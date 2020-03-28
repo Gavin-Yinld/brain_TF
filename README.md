@@ -11,7 +11,7 @@ Growing single-cell “omics” data provide an opportunity to explore brain epi
 Briefly, this pipeline contains following steps:
 1.	Recursive motif search on DMRs of neuronal subtypes to identify key TFs associated with cell specification.
 2.	Single-cell RNA-seq analysis to check cell-type specific expression of key TFs.
-3.	Epigenetic transcription regulatory module inference (ETRM).
+3.	Epigenetic transcription regulatory module (ETRM) inference.
 4.	Co-expression analysis of ETRM.<br>
     a)	At single-cell level.<br>
     b)	At bulk level.<br>
